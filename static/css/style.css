@@ -10627,7 +10627,7 @@ textarea.form-control {
 
 .stack-cards {
   --stack-cards-gap: var(--space-sm);}
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 812px) {
    .stack-cards {
       margin-left: -110px;
       width: 50vh;

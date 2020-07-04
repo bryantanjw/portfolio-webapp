@@ -1,0 +1,286 @@
+{% extends 'layout.html' %}
+
+{% block title %}Bryan Tan Jun Wei{% endblock %}
+
+{% block nav %}
+<li class="nav-item"><a href="{{ url_for('about') }}" class="nav-link">About</a></li>
+<li class="nav-item"><a href="{{ url_for('projects') }}" class="nav-link">Projects</a></li>
+<li class="nav-item"><a href="{{ url_for('writing') }}" class="nav-link">Pieces</a></li>
+<li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
+{% endblock %}
+
+{% block content %}
+    <section id="home" class="intro route bg-image" style="background-image: url(static/images/intro-bg.jpg)">
+		<div class="overlay-itro"></div>
+		<div class="intro-content display-table">
+		  <div class="table-cell">
+			<div class="container" id="headline">
+			  <!--<p class="display-6 color-d">Hello, world!</p>-->
+			  <h1 class="intro-title mb-4">Bryan Tan</h1>
+			  <p class="intro-subtitle">enthused about <span class="text-slider-items">Data Science, Business Intelligence, Flutter, Deep Learning</span><strong class="text-slider"></strong></p>
+			  <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+			</div>
+		  </div>
+		</div>
+	</section>
+
+
+    <section class="ftco-section ftco-intro">
+    	<div class="container">
+    		<div class="row justify-content-end">
+    			<div class="col-md-8">
+    				<h2>CS <span>Undergrad</span>, hobbyist writer, and Business Intelligence Intern of <span>Stashaway</span></h2>
+    				<p>A CS Freshman. Data-driven and analytical, I bring to the table, to influence corporate growth strategies through fact-based, 
+                            data-driven insights and analysis.<br><br> Numbers, histograms, and data-driven optimization are the rhythm of the drumbeat I march to.</p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="services-section py-5 py-md-0">
+      <div class="container">
+        <div class="row no-gutters d-flex">
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block">
+              <div class="icon"><span class="flaticon flaticon-numbers"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3">Data Science</h3>
+				<dl>
+					<dt><span class="icon icon-caret-right"> </span>Cloud SQL</dt>
+					<dt><span class="icon icon-caret-right"> </span>Data Preprocessing</dt>
+					<dt><span class="icon icon-caret-right"> </span>Data Visualization</dt>
+					<dt><span class="icon icon-caret-right"> </span>Machine learning</dt>
+					<dt><span class="icon icon-caret-right"> </span>Model Evaluation</dt>
+				</dl>
+              </div>
+            </div>      
+        </div>
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services active d-block">
+              <div class="icon"><span class="flaticon flaticon-deep-learning"></span></div>
+              <div class="media-body">
+				<h3 class="heading mb-3">Deep Learning</h3>
+				<dl>
+					<dt><span class="icon icon-caret-right"> </span>Backpropagation</dt>
+					<dt><span class="icon icon-caret-right"> </span>Tensorflow</dt>
+					<dt><span class="icon icon-caret-right"> </span>Transfer Learning</dt>
+					<dt><span class="icon icon-caret-right"> </span>Hyperparameter Optimization</dt>
+					<dt><span class="icon icon-caret-right"> </span>Convoluted Neural Networks</dt>
+					<dt><span class="icon icon-caret-right"> </span>Sequence Models</dt>
+				</dl>
+              </div>
+            </div>    
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block">
+              <div class="icon"><span class="flaticon flaticon-mobile-app"></span></div>
+              <div class="media-body">
+				<h3 class="heading mb-3">Mobile App Development</h3>
+				<dl>
+					<dt><span class="icon icon-caret-right"> </span>Flutter</dt>
+					<dt><span class="icon icon-caret-right"> </span>React Native</dt>
+					<dt><span class="icon icon-caret-right"> </span>Async Redux</dt>
+				</dl>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services active d-block">
+              <div class="icon"><span class="flaticon flaticon-code"></span></div>
+              <div class="media-body">
+				<h3 class="heading mb-3">Web Development</h3>
+				<dl>
+					<dt><span class="icon icon-caret-right"> </span>HTML/CSS/JS</dt>
+					<dt><span class="icon icon-caret-right"> </span>Flask</dt>
+					<dt><span class="icon icon-caret-right"> </span>Django</dt>
+					<dt><span class="icon icon-caret-right"> </span>Postgresql</dt>
+					<dt><span class="icon icon-caret-right"> </span>Migrations</dt>
+					<dt><span class="icon icon-caret-right"> </span>Testing, CI/CD</dt>
+				</dl>
+              </div>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="ftco-section ftco-portfolio">
+    	<div class="container-fluid">
+    		<div class="row justify-content-center pb-3">
+          <div class="col-md-12 mb-5 heading-section text-center ftco-animate">
+            <h2 class="mb-5">Latest &amp; <span>Greatest</span></h2>
+          </div>
+        </div>
+    	</div>
+
+    	<div class="container">
+    		<div class="row no-gutters">
+	  			<div class="col-md-12 portfolio-wrap">
+	  				<div class="row no-gutters align-items-center">
+	  					<div class="col-md-5 img js-fullheight" style="background-image: url(static/images/writing-1.jpg);">
+	  						
+	  					</div>
+	  					<div class="col-md-7">
+	  						<div class="text pt-5 pl-0 pl-lg-5 pl-md-4 ftco-animate">
+	  							<div class="px-4 px-lg-4">
+	  								<div class="desc">
+		  								<div class="top">
+			  								<span class="subheading">Writing {12/06/2019}</span>
+				  							<h2 class="mb-4"><a href="{{ url_for('projects') }}">Triumph of Mediocrity</a></h2>
+			  							</div>
+			  							<div class="absolute">
+				  							<p>The phenomenon of regression towards the mean — from competitive business conducts to oral-anal transit time.</p>
+				  							<a class="animated-arrow" href="https://medium.com/cantors-paradise/the-triumph-of-mediocrity-fdda29b9b56f">
+												<span class="the-arrow -left">
+												  <span class="shaft"></span>
+												</span>
+												<span class="main">
+												  <span class="text">
+													Read More
+												  </span>
+												  <span class="the-arrow -right">
+													<span class="shaft"></span>
+												  </span>
+												</span>
+											  </a>
+			  							</div>
+		  							</div>
+	  							</div>
+	  						</div>
+	  					</div>
+	  				</div>
+	  			</div>
+	  		</div>
+    	</div>
+
+    	<div class="container-fluid px-0 portfolio-entry">
+    		<div class="row no-gutters d-xl-flex justify-content-end text-wrapper">
+					<div class="one-half img js-fullheight" style="background-image: url('static/images/work-2.jpg');"></div>
+					<div class="one-half half-text d-flex justify-content-end align-items-center ftco-animate">
+						<div class="text align-items-center d-flex">
+              <div class="desc pt-5 pl-4 pr-4 pt-lg-0 pl-lg-5 pl-xl-0 pr-xl-0">
+								<div class="top">
+  								<span class="subheading">Deep Learning {12/06/2019}</span>
+	  							<h2 class="mb-4"><a href="{{ url_for('projects') }}">Neural Style Transfer</a></h2>
+  							</div>
+  							<div class="absolute">
+	  							<p>Neural style transfer is an optimization technique used to take three images, a content image, 
+									  a style reference image (such as an artwork by a famous painter), and the input 
+									image you want to style — and blend them together such that the input image is transformed to l
+									ook like the content image, but “painted” in the style of the style image, bridging the orbits of deep learning and art!</p>
+	  							<p><a href="https://github.com/TheClub4/artwork-neural-style-transfer" class="custom-btn">View Portfolio</a></p>
+  							</div>
+							</div>
+            </div>
+					</div>
+    		</div>
+    	</div>
+
+    	<div class="container-fluid px-0 portfolio-entry">
+    		<div class="row no-gutters d-md-flex justify-content-start text-wrapper">
+					<div class="one-half img js-fullheight" style="background-image: url('static/images/work-3.jpg');"></div>
+					<div class="one-half half-text d-flex justify-content-end align-items-center ftco-animate">
+						<div class="text-2 align-items-start d-flex">
+              <div class="desc pt-5 pr-4 pl-4 pt-lg-0 pr-lg-5 pr-xl-0 pl-xl-0 ml-5">
+								<div class="top">
+  								<span class="subheading">Web Programming {12/06/2019}</span>
+	  							<h2 class="mb-4"><a href="{{ url_for('projects') }}">All Reads</a></h2>
+  							</div>
+  							<div class="absolute">
+	  							<p>A book review website where users can register, login, and review over 4,000 books in the database</p>
+	  							<p><a href="https://github.com/TheClub4/allreads" class="custom-btn">View Portfolio</a></p>
+  							</div>
+							</div>
+            </div>
+					</div>
+    		</div>
+    	</div>
+
+    	<div class="container">
+    		<div class="row no-gutters">
+	  			<div class="col-md-12 portfolio-wrap">
+	  				<div class="row no-gutters align-items-center">
+	  					<div class="col-md-5 order-md-last img js-fullheight" style="background-image: url(static/images/work-4.jpg);">
+	  						
+	  					</div>
+	  					<div class="col-md-7">
+	  						<div class="text pt-5 pr-md-5 ftco-animate">
+	  							<div class="px-4 px-lg-4">
+	  								<div class="desc">
+		  								<div class="top">
+			  								<span class="subheading">Data Analytics {12/06/2019}</span>
+				  							<h2 class="mb-4"><a href="{{ url_for('projects') }}">Vehicle Collisions in New York City</a></h2>
+			  							</div>
+			  							<div class="absolute">
+				  							<p>A Data Science dashboard webapp depicting vehicle collisions in New York City.
+												The dashboard, amongst other features, showcases a histogram for the breakdown of motor vehicle collisions by minute between one-hour intervals;
+												an interactive 3D map that displays the frequency of collisions during a given time of day.
+											  </p>
+				  							<p><a href="https://github.com/TheClub4/streamlit-nyc" class="custom-btn">View Portfolio</a></p>
+			  							</div>
+		  							</div>
+	  							</div>
+	  						</div>
+	  					</div>
+	  				</div>
+	  			</div>
+	  		</div>
+    	</div>
+
+    	<div class="container-fluid px-0 portfolio-entry">
+    		<div class="row no-gutters d-md-flex justify-content-end text-wrapper">
+					<div class="one-half img js-fullheight" style="background-image: url('static/images/work-7.jpg');"></div>
+					<div class="one-half half-text d-flex justify-content-end align-items-center ftco-animate">
+						<div class="text align-items-center d-flex">
+              <div class="desc pt-5 pl-5 pr-5 pt-lg-0 pl-lg-5 pl-xl-0 pr-xl-0">
+								<div class="top">
+  								<span class="subheading">Convoluted Neural Network {12/06/2019}</span>
+	  							<h2 class="mb-4"><a href="{{ url_for('projects') }}">Car Detection w/ YOLO</a></h2>
+  							</div>
+  							<div class="absolute">
+	  							<p>Object detection using the YOLO model. Many of the ideas in this notebook are described 
+									in the two YOLO papers: Redmon et al., 2016 and Redmon and Farhadi, 2016. This project mainly 
+									touches upon the technicalities of bounding boxes, non-max suppression and IOU.</p>
+	  							<p><a href="https://github.com/TheClub4/car-detection-yolov2" class="custom-btn">View Portfolio</a></p>
+  							</div>
+							</div>
+            </div>
+					</div>
+    		</div>
+    	</div>
+
+    	<div class="container">
+    		<div class="row no-gutters">
+	  			<div class="col-md-12 portfolio-wrap">
+	  				<div class="row no-gutters align-items-center">
+	  					<div class="col-md-5 img js-fullheight" style="background-image: url(static/images/work-6.jpg);">
+	  						
+	  					</div>
+	  					<div class="col-md-7">
+	  						<div class="text pt-5 pl-md-5 pl-md-4 ftco-animate">
+	  							<div class="px-4 px-lg-4">
+	  								<div class="desc">
+		  								<div class="top">
+			  								<span class="subheading">Data Science {12/06/2019}</span>
+				  							<h2 class="mb-4"><a href="{{ url_for('projects') }}">Strategic Clustering for Establishing Restarurants</a></h2>
+			  							</div>
+			  							<div class="absolute">
+				  							<p>Realizing the optimal location to open an Asian restaurant in Toronto, Canada using k-Means Clustering.
+												The objective of this project is to locate the optimal neighborhood for operation. Our foundation of reasoning would 
+												be based on spending power, distribution of ethnic group, and competition, across each neighbourhood. I mainly utilized the 
+												Foursquare Develepor API and the extensive geographical and census data from Toronto’s Open Data Portal.</p>
+				  							<p><a href="https://github.com/TheClub4/strategic_clustering" class="custom-btn">View Portfolio</a></p>
+			  							</div>
+		  							</div>
+	  							</div>
+	  						</div>
+	  					</div>
+	  				</div>
+	  			</div>
+	  		</div>
+    	</div>
+
+    </section>
+
+{% endblock %}    

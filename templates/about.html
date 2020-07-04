@@ -1,0 +1,382 @@
+{% extends 'layout.html' %}
+
+{% block title %}About Me{% endblock %}
+
+{% block nav %}
+<li class="nav-item active"><a href="{{ url_for('about') }}" class="nav-link">About</a></li>
+<li class="nav-item"><a href="{{ url_for('projects') }}" class="nav-link">Projects</a></li>
+<li class="nav-item"><a href="{{ url_for('writing') }}" class="nav-link">Pieces</a></li>
+<li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
+{% endblock %}
+
+{% block content %}
+<div id="particles-js"></div>
+
+<!-- ======= My Resume Section ======= -->
+
+
+<!-- stats - count particles -->
+<div id="colorlib-main">
+  <section class="colorlib-education p-5" data-section="education">
+    <div class="colorlib-narrow-content">
+      <div class="row">
+        <div class="section-title col-md-2 mt-5 animate-box" data-animate-effect="fadeInLeft">
+          <span>Education</span>
+          <h2 class="animate-box">Education</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+          <div class="fancy-collapse-panel">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                      <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent=".fancy-collapse-panel" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">American Degree Transfer Program in Computer Science
+                            <br>
+                            <span>Taylor's University · 2020-2022</span>
+                          </a>
+                      </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                              <p><em>Soon to be updated.</em></p>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+              <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title">
+                          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Cambridge A-Level
+                            <br>
+                            <span>Methodist College Kuala Lumpur · 2018-2019</span>
+                          </a>
+                      </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body">
+                        <p>Grades:</p>
+                      <ul>
+                        <li>AS Mathematics - a</li>
+                        <li>AS Physics - a</li>
+                        <li>AS Economics - a</li>
+                      </ul>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingFive">
+                      <h4 class="panel-title">
+                          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">High School Secondary Education
+                            <br>
+                            <span>R.E.A.L NATIONAL SCHOOL, SHAH ALAM CAMPUS · 2016 - 2017</span>
+                          </a>
+                      </h4>
+                  </div>
+                  <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                      <div class="panel-body">
+                          <p>Awards:</p>
+                          <ul>
+                            <li>Silver Medalist in 5th Kangaroo Math Competition</li>
+                            <li>3rd Placing in Management and Science University (MSU) Running Maths Competition - National Level</li>
+                            <li>Merit Award in the Malaysian National Chemistry Quiz</li>
+                            <li>Academic Excellence Award</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="colorlib-experience p-5" data-section="experience">
+    <div class="colorlib-narrow-content">
+      <div class="row">
+        <div class="section-title col-md-2 mt-5" data-animate-effect="fadeInLeft">
+          <span>Experience</span>
+          <h2>Experience</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+              <div class="timeline-centered">
+                <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                  <div class="timeline-entry-inner">
+
+                    <div class="timeline-icon current"></div>
+                      <div class="timeline-label">
+                        <h2><a>Contributing Writer</a></h2>
+                        <h5>2019 - Present</h5>
+                        <p><em>Towards Data Science</em></p>
+                        <ul>
+                          <li>Produced literary compositions revolving around data science, artificial intelligence, and personal recreational projects.</li>
+                        </ul>
+                      </div>
+                  </div>
+                </article>
+
+
+                <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+                  <div class="timeline-entry-inner">
+                      <div class="timeline-icon color-2">
+                        <i class="icon-pen2"></i>
+                      </div>
+                      <div class="timeline-label">
+                      <h2><a>Community Associate</a>
+                        <h5>Oct 2019 - Jan 2020</h5>
+                        <p><em>FLYPROJECT, KL</em></p>
+                        <ul>
+                          <li>Assisted studio management in daily studio tasks and projects, and managed schedule, events, and collaborations.</li>
+                        </ul>
+                      </div>
+                  </div>
+                </article>
+
+                <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                  <div class="timeline-entry-inner">
+                      <div class="timeline-icon color-3">
+                        <i class="icon-pen2"></i>
+                      </div>
+                      <div class="timeline-label">
+                      <h2><a>Financial Advisory Apprentice</a>
+                        <h5>Aug 2019 - Sep 2019</h5>
+                        <p><em>IPP Financial Advisers, Malaysia</em></p>
+                        <ul>
+                          <li>Mentored by a financial advisor, whilst observed and assimilated his respected profession’s usual operations:
+                              brainstormed on selecting investment plans (particularly unit trust funds) & insurance policies that are catered to clients' risk index and long term financial goals.</li>
+                        </ul>
+                      </div>
+                  </div>
+                </article>
+
+                <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                  <div class="timeline-entry-inner">
+                      <div class="timeline-icon color-3">
+                        <i class="icon-pen2"></i>
+                      </div>
+                      <div class="timeline-label">
+                      <h2><a>Student Brand Ambassador</a>
+                        <h5>Jan 2018 - Aug 2018</h5>
+                        <p><em>Carousell, Malaysia</em></p>
+                        <ul>
+                          <li>Centralized on raising the brand awareness of the app and increase the number of users. Tasks ranged from promoting products or services on college campuses to aiding in marketing campaigns.
+                            My performance was recognized as outstanding and was thus sponsored a trip to Carousell’s headquarters based in Singapore.
+                            <br><br>
+                            <!-- Trigger the Modal -->
+                            <img id="myImg" src="static/images/carousell.jpg" style="height: 100px; width: 100px;">
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+                              <!-- The Close Button -->
+                              <span class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img01">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption"></div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                  </div>
+                </article>
+
+                <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+                  <div class="timeline-entry-inner">
+                      <div class="timeline-icon color-none">
+                      </div>
+                  </div>
+                </article>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="cert" class="p-5 flex">
+    <div class="colorlib-narrow-content">
+      <div class="row">
+        <div class="section-title col-md-2 mt- animate-box" data-animate-effect="fadeInLeft">
+          <span>Certifications</span>
+          <h2>Certifications</h2>
+        </div>
+      </div>
+
+      <div class="container max-width-adaptive-md margin-bottom-lg animate-box" data-animate-effect="backInUp">
+        <ul class="stack-cards js-stack-cards">
+          <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item mb-3">
+            <div class="grid">
+              <div id="cert-text" class="col-6 pt-5 pl-4">
+                <div class="text">
+                  <h2>Deep Learning Specialization</h2>
+                  <h5 class="mb-3">by <b>deeplearning.ai</b></h5>
+                  <ul>
+                    <li>Neural Networks and Deep Learning</li>
+                    <li>Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</li>
+                    <li>Structuring Machine Learning Projects</li>
+                    <li>Convolutional Neural Networks</li>
+                    <li>Sequence Models</li>
+                  </ul>
+                  <p id="dl-btn"><a target="_blank" href="https://www.coursera.org/account/accomplishments/specialization/BP3PFRYRZJ5E?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n" 
+                    class="btn btn--accent">View</a></p>
+                </div>
+              </div>
+  
+              <div class="col-6">
+                <img src="static/images/cert-1.jpg">
+              </div>
+            </div>
+          </li>
+        
+          <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
+            <div class="grid">
+              <div id="cert-text" class="col-6 pt-5 pl-4">
+                <div class="text">
+                  <h2>CS50: Introduction to Computer Science</h2>
+                  <h5>by <b>Harvard University</b></h5>
+                  <ul class="col-6" style="float: left;">
+                    <li>Scratch 😺 </li>
+                    <li>C</li>
+                    <li>Arrays</li>
+                    <li>Algorithms</li>
+                    <li>Memory</li>
+                  </ul>
+                  <ul>
+                    <li>Data Structures</li>
+                    <li>Python 🐍</li>
+                    <li>SQL</li>
+                    <li>Information</li>
+                    <li>IOS Track 📱</li>
+                  </ul>
+                  <p class="pt-2"><a target="_blank" href="https://certificates.cs50.io/328b70fa-a0d9-4be7-b92a-bd0fd5ef447e.pdf?size=letter" 
+                    class="btn btn--accent">View</a></p>
+                </div>
+              </div>
+  
+              <div class="col-6">
+                <img style="object-fit: cover;" src="static/images/cert-2.jpg">
+              </div>
+            </div>
+          </li>
+  
+          <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
+            <div class="grid">
+              <div id="cert-text" class="col-6 pt-5 pl-4">
+                <div class="text">
+                  <h2>IBM Data Science Professional Certificate</h2>
+                  <h5>by <b>IBM</b></h5>
+                  <ul style="float: left;">
+                    <li>What is Data Science?</li>
+                    <li>Tools for Data Science</li>
+                    <li>Data Science Methodology</li>
+                    <li>Python for Data Science and AI</li>
+                    <li>Databases and SQL for Data Science</li>
+                    <li>Data Analysis with Python</li>
+                    <li>Data Visualization with Python</li>
+                  </ul>
+                  <ul>
+                    <li>Machine Learning with Python</li>
+                    <li>Applied Data Science Capstone</li>
+                  </ul>
+                  <p style="position: fixed; bottom: 2px;"><a target="_blank" href="https://coursera.org/share/e6962f5d5245d053cb114d6e00410612" 
+                    class="btn btn--accent">View</a></p>
+                </div>
+              </div>
+  
+              <div class="col-6">
+                <img src="static/images/cert-3.jpg">
+              </div>
+            </div>
+          </li>
+
+          <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
+            <div class="grid">
+              <div id="cert-text" class="col-6 pt-5 pl-4">
+                <div class="text">
+                  <h2>Machine Learning</h2>
+                  <h5>by <b>Stanford Online</b></h5>
+                  <ul class="col-md-7 mr-2" style="float: left;">
+                    <li>Gradient Descent</li>
+                    <li>Logistic Regression</li>
+                    <li>Backpropagation Algorithm</li>
+                    <li>Regularization and Bias/Variance</li>
+                    <li>Support Vector Machines</li>
+                    <li>Unsupervised Learning</li>
+                  </ul>
+                  <ul>
+                    <li>Principal Component Analysis Algorithm</li>
+                    <li>Multivariate Gaussian Distribution</li>
+                  </ul>
+                  <p><a target="_blank" href="https://www.coursera.org/account/accomplishments/records/4X9X7VFQNX6R?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" 
+                    class="btn btn--accent">View</a></p>
+                </div>
+              </div>
+  
+              <div class="col-6">
+                <img src="static/images/cert-4.jpg">
+              </div>
+            </div>
+          </li>
+
+          <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
+            <div class="grid">
+              <div id="cert-text" class="col-6 pt-5 pl-4">
+                <div class="text">
+                  <h2>Data Visualization with Tableau</h2>
+                  <h5>by <b>University of California, Davis</b></h5>
+                  <ul class="col-9">
+                    <li>Fundamentals of Visualization with Tableau</li>
+                    <li>Essential Design Principles for Tableau</li>
+                    <li>Visual Analytics with Tableau</li>
+                    <li>Creating Dashboards and Storytelling with Tableau</li>
+                    <li>Data Visualization with Tableau Project</li>
+                  </ul>
+                  <p><a target="_blank" href="https://coursera.org/share/2c64835a8403ecf5a2cbe0403f50d1dd" 
+                    class="btn btn--accent">View</a></p>
+                </div>
+              </div>
+  
+              <div class="col-6 pr-4">
+                <img class="img-fluid" src="static/images/cert-5.jpg">
+              </div>
+            </div>
+          </li>
+
+          <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
+            <div class="grid">
+              <div id="cert-text" class="col-6 pt-5 pl-4">
+                <div class="text">
+                  <h2>Entrepreneurship 1-4</h2>
+                  <h5>by <b>Wharton Online</b></h5>
+                  <ul class="col-9 mt-5">
+                    <li>Developing the Opportunity</li>
+                    <li>Launching your Start-up</li>
+                    <li>Growth Strategies</li>
+                    <li>Financing and Profitability</li>
+                  </ul>
+                  <p><a target="_blank" href="https://coursera.org/share/7d0d00f28e9f1f462e9055b2861f00da" 
+                    class="btn btn--accent">View</a></p>
+                </div>
+              </div>
+  
+              <div class="col-6 pr-4">
+                <img style="object-fit: cover; width: 110%;" src="static/images/cert-6.jpg">
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+    
+
+{% endblock %}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:900&display=swap" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    </head>
+    <body>
+            <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="{{ url_for('index') }}">Bryan Tan</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="oi oi-menu"></span> Menu
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav ml-auto">
+                        {% block nav %}{% endblock %}
+                    </ul>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>
+            </nav>
+            <!-- END nav -->
+
+            {% block content %}
+
+            {% endblock %}
+
+            <footer class="ftco-footer ftco-section">
+                <div class="container">
+                    <div class="row mb-5">
+                    <div class="col-md mr-5">
+                        <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">About Me</h2>
+                        <p>A CS Freshman. Data-driven and analytical, I bring to the table, to influence corporate growth strategies through fact-based, 
+                            data-driven insights and analysis.<br><br> Numbers, histograms, and data-driven optimization are the rhythm of the drumbeat I march to.</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="ftco-animate"><a href=""><span class="icon-instagram"></span></a></li>
+                            <li class="ftco-animate"><a href="https://medium.com/@BryanJr" target="_blank"><span class="icon-medium"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.linkedin.com/in/bryantan1/" target="_blank"><span class="icon-linkedin"></span></a></li>
+                        </ul>
+                        </div>
+                    </div>
+                    <!-- Information
+                    <div class="col-md">
+                        <div class="ftco-footer-widget mb-4 ml-md-5">
+                        <h2 class="ftco-heading-2">Information</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="py-2 d-block">Portfolio</a></li>
+                            <li><a href="#" class="py-2 d-block">Privacy</a></li>
+                            <li><a href="#" class="py-2 d-block">Terms Condition</a></li>
+                        </ul>
+                        </div>
+                    </div> -->
+                    <div class="col-md justify-content-center">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">Links</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="{{ url_for('index') }}" class="py-2 d-block">Home</a></li>
+                                <li><a href="{{ url_for('about') }}" class="py-2 d-block">About</a></li>
+                                <li><a href="{{ url_for('projects') }}" class="py-2 d-block">Projects</a></li>
+                                <li><a href="{{ url_for('writing') }}" class="py-2 d-block">Pieces</a></li>
+                                <li><a href="{{ url_for('contact') }}" class="py-2 d-block">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">Get in Touch</h2>
+                            <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span class="text">1, Jalan Taylors, 47500 Subang Jaya, Selangor</span></li>
+                                <li><span class="icon icon-envelope"></span><span class="text">bryantan-888@hotmail.com</span></li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-12 text-center">
+            
+                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This site was made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Bryan</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </div>
+                    </div>
+                </div>
+                </footer>            
+        
+        
+        <!-- loader -->
+        <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#000000"/></svg></div>
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/open-iconic-bootstrap.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}">
+        
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/aos.css') }}">
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ionicons.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/boxicons/css/boxicons.min.css') }}">
+        
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/flaticon/font/flaticon.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/icomoon.css') }}">
+        
+        <!-- JS -->
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/tutorial.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/gulpfile.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/particles.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/typed.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-migrate-3.0.1.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.stellar.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/aos.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.animateNumber.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/scrollax.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/google-map.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/isotope.pkgd.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>

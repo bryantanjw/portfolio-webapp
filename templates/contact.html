@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block nav %}
+<li class="nav-item"><a href="{{ url_for('about') }}" class="nav-link">About</a></li>
+<li class="nav-item"><a href="{{ url_for('projects') }}" class="nav-link">Projects</a></li>
+<li class="nav-item"><a href="{{ url_for('writing') }}" class="nav-link">Pieces</a></li>
+<li class="nav-item active"><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
+{% endblock %}
+
+{% block content %}    
+<div class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('static/images/contact_bg.jpg');">
+	<div class="overlay"></div>
+	<div class="container">
+
+    <section class="contact-section bg-primary">
+      <div class="container">
+        <div class="row no-gutters d-flex contact-info">
+          <div class="col-md-6">
+          	<div class="align-self-stretch box p-4 py-md-5 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h6><br>Address</h6>
+	            <h5>1, Jalan Taylors, 47500 Subang Jaya, Selangor</h5>
+	          </div>
+          </div>
+          
+          <div class="col-md-6">
+          	<div class="align-self-stretch box p-4 py-md-5 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h6><br>Email Address</h6>
+	            <h5>bryantan-888@hotmail.com<h5>
+	          </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+			
+		
+
+{% endblock %}

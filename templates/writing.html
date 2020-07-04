@@ -1,0 +1,321 @@
+{% extends 'layout.html' %}
+
+{% block title %}Bryan - Writing{% endblock %}
+
+{% block nav %}
+    <li class="nav-item"><a href="{{ url_for('about') }}" class="nav-link">About</a></li>
+    <li class="nav-item"><a href="{{ url_for('projects') }}" class="nav-link">Projects</a></li>
+    <li class="nav-item active"><a href="{{ url_for('writing') }}" class="nav-link">Pieces</a></li>
+    <li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
+{% endblock %}
+
+{% block content %}
+
+<section class="hero-wrap-writing js-fullheight">
+  <div class="container-fluid px-0">
+    <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
+    <div class="col-md-12 ftco-animate text-center">
+      <div class="desc">
+        <span class="subheading">Magazine</span>
+        <h1 style="background-image: url(static/images/writing_bg.jpg);">Pieces</h1>
+        <span class="subheading-2">Medium Edition</span>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section ftco-no-pb ftco-no-pt">
+  <div class="container-fluid px-0">
+    <div class="row no-gutters">
+
+      <!-- Image left -->
+      <div class="col-md-12 blog-wrap">
+        <div class="row no-gutters align-items-center">
+          <div class="col-md-6 img js-fullheight" style="background-image: url(static/images/writing-1.jpg);">
+            
+          </div>
+          <div class="col-md-6">
+            <div class="text p-md-5 p-4 ftco-animate">
+              <h6>published in <b>Cantor's Paradise</b></h6>
+              <h2 class="mb-4">Triumph of Mediocrity</a></h2>
+              <h5>The phenomenon of regression towards the mean — from competitive business conducts to oral-anal transit time.</h5>
+              <br>
+              <h6>Apr 19 · 12 min read</h6>
+              <br>
+              <p>Secrist found the same phenomenon in every kind of business. Hardware stores regressed to mediocrity, so did grocery stores. And it didn’t matter what metric you used. Secrist tried measuring his companies by the ratio of wages to sales, the ratio of rent to sales, and whatever other economic stat he could put his hands on. It didn’t matter. With time, the top performers started to look and behave just like the members of the common mass <b>...</b></p>
+              <a class="animated-arrow" href="https://medium.com/cantors-paradise/the-triumph-of-mediocrity-fdda29b9b56f">
+                <span class="the-arrow -left">
+                  <span class="shaft"></span>
+                </span>
+                <span class="main">
+                  <span class="text">
+                    Read More
+                  </span>
+                  <span class="the-arrow -right">
+                    <span class="shaft"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END Image left-->
+
+      <!-- Image right -->
+      <div class="col-md-12 blog-wrap">
+        <div class="row no-gutters align-items-center">
+          <div class="col-md-6 img js-fullheight order-md-last" style="background-image: url(static/images/writing-2.jpg);">
+            
+          </div>
+          <div class="col-md-6">
+            <div class="text p-md-5 p-4 ftco-animate">
+              <h6>published in <b>Towards Data Science</b></h6>
+              <h2 class="mb-4">Generate Novel Artistic Artworks with Deep Learning</a></h2>
+              <h5>Deep Learning & Art: Neural Style Transfer</h5>
+              <br>
+              <h6>May 3 · 13 min read</h6>
+              <br>
+              <p>Neural style transfer is an optimization technique used to take three images, a content image, a style reference image (such as an artwork by a famous painter), and the input 
+                image you want to style — and blend them together such that the input image is transformed to look like the content image, but “painted” in the style of the style image, bridging the orbits of deep learning and art!
+                For example, let’s take an image of this turtle and Katsushika Hokusai’s The Great Wave off Kanagawa <b>...</b></p>
+              <a class="animated-arrow" href="https://towardsdatascience.com/generate-novel-artistic-artworks-with-deep-learning-f2f61da69e6e">
+                <span class="the-arrow -left">
+                  <span class="shaft"></span>
+                </span>
+                <span class="main">
+                  <span class="text">
+                    Read More
+                  </span>
+                  <span class="the-arrow -right">
+                    <span class="shaft"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END Image right-->
+
+
+      <!-- Parallax -->
+      <div class="hero-wrap hero-wrap-2 parallax" style="background-image: url('static/images/writing-6.jpg'); height: 710px;" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="col-md-6">
+          <div class="text p-md-5">
+            <h6>published in <b>Towards Data Science</b></h6>
+              <h2 class="bread" style="font-family: 'Times New Roman', Times, serif;">Strategic Clustering for Establishing Restaurants</h2>
+              <h5>Finding the optimal location to open an Asian restaurant in Toronto, Canada using k-Means Clustering</h5>
+              <div class="container mt-4">
+                <h6>Mar 21 · 9 min read</h6>
+                <br>
+                <p>Using the Foursquare API’s explore function, we could return the number of Asian restaurants located in each neighbourhood. By calculating the mean respectively, it can give us a better understanding of the frequency of occurrence in each neighbourhood. The argument for the use of frequency <b>...</b></p>
+                <a class="animated-arrow" href="https://towardsdatascience.com/strategic-location-for-establishing-an-asian-restaurant-c3aecf2496b1">
+                  <span class="the-arrow -left">
+                    <span class="shaft"></span>
+                  </span>
+                  <span class="main">
+                    <span class="text">
+                      Read More
+                    </span>
+                    <span class="the-arrow -right">
+                      <span class="shaft"></span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- END Parallax-->
+
+
+      <div class="col-md-12 blog-wrap">
+        <div class="row no-gutters align-items-center">
+          <div class="col-md-6 img js-fullheight order-md-last" style="background-image: url(static/images/writing-4.jpg);">
+            
+          </div>
+          <div class="col-md-6">
+            <div class="text p-md-5 p-4 ftco-animate">
+              <h6>published in <b>The Startup</b></h6>
+              <h2 class="mb-4">How to Build Simple Recommender Systems in Python</a></h2>
+              <h5>User-based Collaborative Filtering using the Pearson Correlation Coefficient</h5>
+              <br>
+              <h6>Apr 19 · 15 min read</h6>
+              <br>
+              <p>Collaborative filtering is based on the fact that relationships exist between products and people’s interests. Many recommendation systems use collaborative filtering to find these relationships and to give an accurate recommendation of a product that the user might like or be interested in <b>...</b></p>
+              <a class="animated-arrow" href="https://medium.com/swlh/how-to-build-simple-recommender-systems-in-python-647e5bcd78bd">
+                <span class="the-arrow -left">
+                  <span class="shaft"></span>
+                </span>
+                <span class="main">
+                  <span class="text">
+                    Read More
+                  </span>
+                  <span class="the-arrow -right">
+                    <span class="shaft"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 blog-wrap">
+        <div class="row no-gutters align-items-center">
+          <div class="col-md-6 img js-fullheight" style="background-image: url(static/images/writing-5.jpg);">
+            
+          </div>
+          <div class="col-md-6">
+            <div class="text p-md-5 p-4 ftco-animate">
+              <h6>published in <b>Towards Data Science</b></h6>
+              <h2 class="mb-4">How to Classify Cat Pics with a Logistic Regression Model</a></h2>
+              <h5>Building a 2-Layer Neural Network for Binary Classifications</h5>
+              <br>
+              <h6>Apr 3 · 7 min read</h6>
+              <br>
+              <p>The flattened input matrices will be passed through parameters of weighted matrices, W[i], and bias vectors, b[i]. The value of Yhat will then be predicted by passing the parameters through a sigmoid activation function. From the values of the parameters and their corresponding Yhat values , we can minimize the cost by computing the cost function; then learn the parameters for modeling <b>...</b></p>
+              <a class="animated-arrow" href="https://towardsdatascience.com/classifying-cat-pics-with-a-logistic-regression-model-e35dfb9159bb">
+                <span class="the-arrow -left">
+                  <span class="shaft"></span>
+                </span>
+                <span class="main">
+                  <span class="text">
+                    Read More
+                  </span>
+                  <span class="the-arrow -right">
+                    <span class="shaft"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-wrap hero-wrap-2 parallax" style="background-image: url('static/images/writing-7.jpg'); height: 710px;" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="col-md-6">
+          <div class="text p-md-5">
+              <h2 class="bread" style="font-family: 'Times New Roman', Times, serif;">There is No Such Thing as Public Opinion</h2>
+              <h5>In light of the prevalent 2020 American electoral buzz, thought it would be fitting to revisit some statistical analysis of past poll data.</h5>
+              <div class="container mt-4">
+                <h6>Apr 22 · 9 min read</h6>
+                <br>
+                <p>Sometimes you can poll the hell out of the people and it’s still tough to be sure. For example: Do Americans want small government? In a January 2011 CBS News poll, 77% of respondents said cutting spending was the best way to handle the federal budget deficit <b>...</b></p>
+                <a class="animated-arrow" href="https://medium.com/@BryanJr/there-is-no-such-thing-as-public-opinion-93b675c3e63f">
+                  <span class="the-arrow -left">
+                    <span class="shaft"></span>
+                  </span>
+                  <span class="main">
+                    <span class="text">
+                      Read More
+                    </span>
+                    <span class="the-arrow -right">
+                      <span class="shaft"></span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 blog-wrap">
+        <div class="row no-gutters align-items-center">
+          <div class="col-md-6 img js-fullheight" style="background-image: url(static/images/writing-9.gif);">
+            
+          </div>
+          <div class="col-md-6">
+            <div class="text p-md-5 p-4 ftco-animate">
+              <h2 class="mb-4">A Beginner’s Guide to Customer Segmentation with k-Means Clustering</h2>
+              <h5>A significant business strategy to target specific groups of customers and effectively allocate marketing resources.</h5>
+              <br>
+              <h6>Mar 19 · 4 min read</h6>
+              <br>
+              <p>Customer segmentation is the practice of partitioning a customer base into groups of individuals that have similar characteristics. It is a significant strategy as businesses can target these specific groups of customers and effectively allocate marketing resources. Case in point, one group might contain customers who are high-profit and low-risk, that is, more likely to purchase products or subscribe for a service <b>...</b></p>
+              <a class="animated-arrow" href="https://medium.com/@BryanJr/customer-segmentation-with-k-means-clustering-8167c8bd833b">
+                <span class="the-arrow -left">
+                  <span class="shaft"></span>
+                </span>
+                <span class="main">
+                  <span class="text">
+                    Read More
+                  </span>
+                  <span class="the-arrow -right">
+                    <span class="shaft"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 blog-wrap">
+        <div class="row no-gutters align-items-center order-md-last">
+          <div class="col-md-6 img js-fullheight order-md-last" style="background-image: url(static/images/writing-8.gif);">
+            
+          </div>
+          <div class="col-md-6">
+            <div class="text p-md-5 p-4 ftco-animate">
+              <h6>published in <b>Towards Data Science</b></h6>
+              <h2 class="mb-4">Guide to Car Detection using YOLO</a></h2>
+              <h5>In-depth concept of the YOLO algorithm — bounding boxes, non-max suppression and IOU.</h5>
+              <br>
+              <h6>May  3 · 13 min read</h6>
+              <br>
+              <p>We then select only a few boxes based on score-thresholding — discarding boxes that have detected a class with a score less than the threshold, and non-max suppression — computing the Intersection over Union (IOU) and avoiding selecting overlapping boxes <b>...</b></p>
+              <a class="animated-arrow" href="https://towardsdatascience.com/guide-to-car-detection-using-yolo-48caac8e4ded">
+                <span class="the-arrow -left">
+                  <span class="shaft"></span>
+                </span>
+                <span class="main">
+                  <span class="text">
+                    Read More
+                  </span>
+                  <span class="the-arrow -right">
+                    <span class="shaft"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-wrap hero-wrap-2 parallax" style="background-image: url('static/images/work-8.jpg'); height: 750px;" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="col-md-6">
+          <div class="text p-md-5">
+              <h6>published in <b>Towards Data Science</b></h6>
+              <h2 class="bread" style="font-family: 'Times New Roman', Times, serif;">Performing Sentiment Analysis on Movie Reviews</h2>
+              <h5>The essentials of TD-IDF and tokenization with scikit-learn</h5>
+              <div class="container mt-4">
+                <h6>Mar 22 · 7 min read</h6>
+                <br>
+                <p>Evidently from the sample sentence, the word ‘is’ had the highest term frequency in the third sentence in the document. What you’ll notice after the value gets transformed into a TD-IDF value, is that instead of an inflated value of 3, it is now 0.45 <b>...</b></p>
+                <a class="animated-arrow" href="https://towardsdatascience.com/imdb-reviews-or-8143fe57c825">
+                  <span class="the-arrow -left">
+                    <span class="shaft"></span>
+                  </span>
+                  <span class="main">
+                    <span class="text">
+                      Read More
+                    </span>
+                    <span class="the-arrow -right">
+                      <span class="shaft"></span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

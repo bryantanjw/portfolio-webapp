@@ -1,0 +1,539 @@
+{% extends 'layout.html' %}
+
+{% block title %}Bryan - Projects{% endblock %}
+
+{% block nav %}
+<li class="nav-item"><a href="{{ url_for('about') }}" class="nav-link">About</a></li>
+<li class="nav-item active"><a href="{{ url_for('projects') }}" class="nav-link">Projects</a></li>
+<li class="nav-item"><a href="{{ url_for('writing') }}" class="nav-link">Pieces</a></li>
+<li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
+{% endblock %}
+
+{% block content %}
+    
+<section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('static/images/projects.jpg');" data-stellar-background-ratio="0.5">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row no-gutters slider-text js-fullheight align-items-end">
+			<div class="col-md-9 ftco-animate pb-5">
+			<h2 class="mb-3 bread">Projects</h2>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="portfolio" class="portfolio ftco-section ftco-portfolio">
+	<div class="container">
+		<!-- Filter
+		<ul id="portfolio-flters" class="d-flex justify-content-center">
+			<li data-filter="*" class="filter-active">All</li>
+			<li data-filter=".filter-ai">AI</li>
+			<li data-filter=".filter-data">Data</li>
+			<li data-filter=".filter-web">Web</li>
+			<li data-filter=".filter-mobile">Mobile</li>
+		</ul> -->
+		
+		<div class="row portfolio-container">
+			<!-- Project template -->
+			<div class="col-md-6 portfolio-wrap filter-web ftco-animate">
+				<div class="row align-items-center">
+					<div class="col-md-12">
+						<div class="img js-fullheight" style="background-image: url(static/images/work-3.jpg);">
+							
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="text">
+							<div class="px-0 pt-5">
+								<div class="desc">
+									<div class="top top-relative">
+										<span class="subheading">Web Development {28/05/2020}</span>
+										<h2 class="mb-4"><a>All Reads</a></h2>
+									</div>
+									<div class="absolute relative">
+										<p>A book review website. Users will be able to register for the website and then log in using their username 
+											and password. Once they log in, they will be able to search for books, leave reviews for individual books, 
+											and see the reviews made by other people. There is also the use of a third-party API by Goodreads, another book 
+											review website, to pull in ratings from a broader audience. Finally, users will be able to query for book details and 
+											book reviews programmatically via the website’s API.</p>
+										<p><a href="https://github.com/TheClub4/allreads" class="custom-btn">View Portfolio</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END Project template -->
+
+			<div class="col-md-6 portfolio-wrap filter-data ftco-animate">
+				<div class="row align-items-center">
+					<div class="col-md-12">
+						<div class="img js-fullheight" style="background-image: url(static/images/work-4.jpg);">
+							
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="text">
+							<div class="px-0 pt-5">
+								<div class="desc">
+									<div class="top top-relative">
+										<span class="subheading">Data Analytics {01/05/2020}</span>
+										<h2 class="mb-4"><a>Vehicle Collisions in New York City</a></h2>
+									</div>
+									<div class="absolute relative">
+										<p>A Data Science dashboard webapp depicting vehicle collisions in New York City. The dataset was derived from the New York City Police Department, 
+											consisting of 1.67 million rows and 29 columns. The dashboard, amongst other features, showcases a plotly histogram for the breakdown of motor vehicle collisions by minute between one-hour intervals.
+											It also has an interactive 3D map that displays the frequency of collisions during a given time of day; notice that most motor vehicle collisions happen at night. The map was plotted by utilising Uber's 
+											open source deck.gl library (pydeck).</p>
+										<p><a href="https://github.com/TheClub4/streamlit-nyc" class="custom-btn">View Portfolio</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				
+			<div class="col-md-6 portfolio-wrap filter-ai ftco-animate">
+				<div class="row align-items-center">
+					<div class="col-md-12">
+						<div class="img js-fullheight" style="background-image: url(static/images/work-2.jpg);">
+							
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="text">
+							<div class="px-0 pt-5">
+								<div class="desc">
+									<div class="top top-relative">
+										<span class="subheading">Deep Learning {03/04/2020}</span>
+										<h2 class="mb-4"><a>Neural Style Transfer</a></h2>
+									</div>
+									<div class="absolute relative">
+										<p>Neural Style Transfer is an algorithm, that given a content image C and a style image S, can generate an artistic image.
+											It uses representations (hidden layer activations) based on a pre-trained ConvNet. The content cost function is computed using one hidden layer's activations; the style cost function for one layer is computed using the Gram matrix of that layer's activations. 
+											The overall style cost function is obtained using several hidden layers.
+											Lastly, optimizing the total cost function results in synthesizing new images.</p>
+										<p><a href="https://github.com/TheClub4/artwork-neural-style-transfer" class="custom-btn">View Portfolio</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				
+			<div class="col-md-6 portfolio-wrap filter-ai ftco-animate">
+				<div class="row align-items-center">
+					<div class="col-md-12">
+						<div class="img js-fullheight" style="background-image: url(static/images/work-15.jpg);">
+							
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="text">
+							<div class="px-0 pt-5">
+								<div class="desc">
+									<div class="top top-relative">
+										<span class="subheading">Convoluted Neural Networks {12/06/2020}</span>
+										<h2 class="mb-4"><a>Facial Expression Recognition w/ Keras</a></h2>
+									</div>
+									<div class="absolute relative">
+										<p>Built and trained a convolutional neural network (CNN) in Keras to recognize facial expressions. 
+											The data consists of 48x48 pixel grayscale images of faces. The objective is to classify each face based on 
+											the emotion shown in the facial expression into one of seven categories (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 
+											5=Surprise, 6=Neutral). OpenCV was used to automatically detect faces in images and draw bounding boxes around them. 
+											Once the model has been trained, saved, and exported the CNN, the trained model predictions was served to a web interface to 
+											perform real-time facial expression recognition on video and image data.</p>
+										<p><a href="https://github.com/TheClub4/facial-expression-recognition" class="custom-btn">View Portfolio</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-6 portfolio-wrap filter-ai ftco-animate">
+				<div class="row align-items-center">
+					<div class="col-md-12">
+						<div class="img js-fullheight" style="background-image: url(static/images/work-5.jpg);">
+							
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="text">
+							<div class="px-0 pt-5">
+								<div class="desc">
+									<div class="top top-relative">
+										<span class="subheading">Minimax {24/04/2020}</span>
+										<h2 class="mb-4"><a>Tic-Tac-Toe Bot</a></h2>
+									</div>
+									<div class="absolute relative">
+										<p>Used Minimax to implement an AI that plays Tic-Tac-Toe optimally. since Tic-Tac-Toe 
+												is a tie given optimal play by both sides, you should never be able to beat the AI (though if you don’t 
+												play optimally as well, it may beat you!)</p>
+										<p><a href="https://github.com/TheClub4/tictactoe" class="custom-btn">View Portfolio</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 portfolio-wrap filter-ai ftco-animate">
+				<div class="row align-items-center">
+					<div class="col-md-12">
+						<div class="img js-fullheight" style="background-image: url(static/images/work-7.jpg);">
+							
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="text">
+							<div class="px-0 pt-5">
+								<div class="desc">
+									<div class="top top-relative">
+										<span class="subheading">Convoluted Neural Networks {03/04/2020}</span>
+										<h2 class="mb-4"><a>Car Detection w/ YOLO</a></h2>
+									</div>
+									<div class="absolute relative">
+										<p>Object detection using the YOLO model. Many of the ideas in this notebook are described 
+											in the two YOLO papers: Redmon et al., 2016 and Redmon and Farhadi, 2016. This project mainly 
+											touches upon the technicalities of bounding boxes, non-max suppression and IOU.</p>
+										<p><a href="https://github.com/TheClub4/car-detection-yolov2" class="custom-btn">View Portfolio</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 portfolio-wrap filter-ai ftco-animate">
+				<div class="row align-items-center">
+					<div class="col-md-12">
+						<div class="img js-fullheight" style="background-image: url(static/images/work-8.jpg);">
+							
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="text">
+							<div class="px-0 pt-5">
+								<div class="desc">
+									<div class="top top-relative">
+										<span class="subheading">Sentiment Analysis {22/03/2020}</span>
+										<h2 class="mb-4"><a>Sentiment Analysis of IMDb Reviews</a></h2>
+									</div>
+									<div class="absolute relative">
+										<p>Based off the fundamentals of sentiment analysis, and built a logistic regression model to classify movie reviews as either positive or negative. I had used the IMDB dataset for the purpose of this project. The project's goal was to use a simple logistic regression estimator from scikit-learn for document classification.</p>
+										<p><a href="https://github.com/TheClub4/IMDB_Sentiment_Analysis" class="custom-btn">View Portfolio</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 portfolio-wrap filter-data ftco-animate">
+				<div class="row align-items-center">
+					<div class="col-md-12">
+						<div class="img js-fullheight" style="background-image: url(static/images/work-6.jpg);">
+							
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="text">
+							<div class="px-0 pt-5">
+								<div class="desc">
+									<div class="top top-relative">
+										<span class="subheading">Data Science {21/03/2020}</span>
+										<h2 class="mb-4"><a>Strategic Clustering for Establishing Restaurants</a></h2>
+									</div>
+									<div class="absolute relative">
+										<p>Realizing the optimal location to open an Asian restaurant in Toronto, Canada using k-Means Clustering.
+											The objective of this project is to locate the optimal neighborhood for operation. Our foundation of reasoning would 
+											be based on spending power, distribution of ethnic group, and competition, across each neighbourhood. I mainly utilized the 
+											Foursquare Develepor API and the extensive geographical and census data from Toronto’s Open Data Portal.
+										</p>
+										<p><a href="https://github.com/TheClub4/strategic_clustering" class="custom-btn">View Portfolio</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 portfolio-wrap filter-mobile ftco-animate">
+				<div class="row align-items-center">
+					<div class="col-md-12">
+						<div class="img js-fullheight" style="background-image: url(static/images/work-13.jpg);">
+							
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="text">
+							<div class="px-0 pt-5">
+								<div class="desc">
+									<div class="top top-relative">
+										<span class="subheading">Swift {18/04/2020}</span>
+										<h2 class="mb-4"><a>Fiftygram</a></h2>
+									</div>
+									<div class="absolute relative">
+										<p>An app that allows users to apply filters to photos, more specifically: noir, fade, sepia, and vintage.</p>
+										<p><a href="https://github.com/TheClub4/fiftygram" class="custom-btn">View Portfolio</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				
+			<div class="col-md-6 portfolio-wrap filter-ai ftco-animate">
+				<div class="row align-items-center">
+					<div class="col-md-12">
+						<div class="img js-fullheight" style="background-image: url(static/images/work-9.jpg);">
+							
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="text">
+							<div class="px-0 pt-5">
+								<div class="desc">
+									<div class="top top-relative">
+										<span class="subheading">Neural Networks {03/04/2020}</span>
+										<h2 class="mb-4"><a>Binary Classification of Cat Pics</a></h2>
+									</div>
+									<div class="absolute relative">
+										<p>An extensive examination of the concept of forward- and backpropagation in deep neural networks.
+											A 2-layer neural network——essentially a logistic regression model——and a deep neural network were both constructed;
+											their respective performances was thereafter compared. Different hyperparameter tuning——learning rate, for one——was tuned to observe
+											the difference in results. In the end was embedded a result analysis into the types of cat pictures that the model had trouble identifying.
+										</p>
+										<p><a href="https://github.com/TheClub4/Cat_Classification" class="custom-btn">View Portfolio</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+			<div class="col-md-6 portfolio-wrap filter-ai ftco-animate">
+				<div class="row align-items-center">
+					<div class="col-md-12">
+						<div class="img js-fullheight" style="background-image: url(static/images/work-11.jpg);">
+							
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="text">
+							<div class="px-0 pt-5">
+								<div class="desc">
+									<div class="top top-relative">
+										<span class="subheading">Breadth-First Search {19/04/2020}</span>
+										<h2 class="mb-4"><a>Six Degrees of Kevin Bacon</a></h2>
+									</div>
+									<div class="absolute relative">
+										<p>According to the Six Degrees of Kevin Bacon game, anyone in the Hollywood film 
+											industry can be connected to Kevin Bacon within six steps, where each step consists of 
+											finding a film that two actors both starred in.
+											In this problem, we’re interested in finding the shortest path between any two actors by 
+											choosing a sequence of movies that connects them. For example, the shortest path between Jennifer 
+											Lawrence and Tom Hanks is 2: Jennifer Lawrence is connected to Kevin Bacon by both starring in 
+											“X-Men: First Class,” and Kevin Bacon is connected to Tom Hanks by both starring in “Apollo 13.”</p>
+										<p><a href="https://github.com/TheClub4/degrees" class="custom-btn">View Portfolio</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 portfolio-wrap filter-data ftco-animate">
+				<div class="row align-items-center">
+					<div class="col-md-12">
+						<div class="img js-fullheight" style="background-image: url(static/images/violence-10.jpg);">
+							
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="text">
+							<div class="px-0 pt-5">
+								<div class="desc">
+									<div class="top top-relative">
+										<span class="subheading">Data Visualization {28/03/2020}</span>
+										<h2 class="mb-4"><a>Education to Diminish Violence Against Women</a></h2>
+									</div>
+									<div class="absolute relative">
+										<p>An infographic walkthrough of domestic violence in Africa. Violence against women in the aforementioned 
+											continues to be an obstacle to achieving equality, development, peace as well as to the fulfilment of women 
+											and girls’ human rights. In this study, we will look in-depth into why we have come to the conclusion that 
+											education is the key facilitator in eradicating violence against women, explore what types of behaviour of the 
+											surveyed women that agitates men to engage in physical callousness, and the ranking of African countries based on domestic 
+											violence against women using their average agreement rates as the KPI.
+										</p>
+										<p><a href="https://towardsdatascience.com/education-to-diminish-violence-against-women-bf599b350426" class="custom-btn">View Portfolio</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+				
+
+			<div class="col-md-6 portfolio-wrap filter-web ftco-animate">
+				<div class="row align-items-center">
+					<div class="col-md-12">
+						<div class="img js-fullheight" style="background-image: url(static/images/work-14.jpg);">
+							
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="text">
+							<div class="px-0 pt-5">
+								<div class="desc">
+									<div class="top top-relative">
+										<span class="subheading">Web Programming {20/10/2019}</span>
+										<h2 class="mb-4"><a>Climate Models</a></h2>
+									</div>
+									<div class="absolute relative">
+										<p>A web application to visually and informatively display Earth’s regional environmental data 
+											such as chlorophyll concentration, bathymetry, net productivity(net intake of carbon dioxide mainly by 
+											flora), average land and sea temperature and so on.
+											<br>
+											<br>
+											The web-app allows users to gain insight from interacting with the global climate models. Chlorophyll concentration 
+											gives us an understanding of the phytoplankton population around the coastal areas; a visual representation of nitrogen 
+											dioxide concentration distinguishes densely populated regions or of high ozone collection. The awareness in regards to global 
+											disasters like the severity of the active fires that have been occurring globally can too be raised by the “Active Fires” visualization data. 
+											To take it a step further, users can overlay two or more climate layers simultaneously. Case in point, by overlaying average sea temperature and chlorophyll 
+											concentration in conjunction, we can interpret a correlation between them.
+										</p>
+										<p><a href="single.html" class="custom-btn">View Portfolio</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 portfolio-wrap ftco-animate filter-ai">
+				<div class="row align-items-center">
+					<div class="col-md-12">
+						<div class="img js-fullheight" style="background-image: url(static/images/work-12.jpg);">
+							
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="text">
+							<div class="px-0 pt-5">
+								<div class="desc">
+									<div class="top top-relative">
+										<span class="subheading">First Order Logic {08/05/2020}</span>
+										<h2 class="mb-4"><a>Minesweeper Bot</a></h2>
+									</div>
+									<div class="absolute relative">
+										<p>An AI that plays Minesweeper. Knowledge-based agents make decisions by considering their knowledge base, 
+											and making inferences based on that knowledge.
+											One way we could represent an AI’s knowledge about a Minesweeper game is by making each cell a propositional 
+											variable that is true if the cell contains a mine, and false otherwise.
+											
+											What information does the AI have access to? Well, the AI would know every time a safe cell is clicked on and would get to see the number for that cell. Consider the following Minesweeper board, where the middle cell has been revealed, and the other cells have been labeled with an identifying letter for the sake of discussion.</p>
+										<p><a href="https://github.com/TheClub4/minesweeper" class="custom-btn">View Portfolio</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+
+			<div class="col-md-6 portfolio-wrap filter-ai ftco-animate">
+				<div class="row align-items-center">
+					<div class="col-md-12">
+						<div class="img js-fullheight" style="background-image: url(static/images/work-16.jpg);">
+							
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="text">
+							<div class="px-0 pt-5">
+								<div class="desc">
+									<div class="top top-relative">
+										<span class="subheading">Python {18/04/2020}</span>
+										<h2 class="mb-4"><a>DNA Profiling by STRs</a></h2>
+									</div>
+									<div class="absolute relative">
+										<p>A program that identifies a person based on their DNA.
+											<br><br>
+											One place where DNA tends to have high genetic diversity is in Short Tandem Repeats (STRs). An STR is a short sequence of DNA 
+											bases that tends to repeat consecutively numerous times at specific locations inside of a person’s DNA. 
+											If the probability that two people have the 
+											same number of repeats for a single STR is 5%, and the analyst looks at 10 different STRs, then the probability that two DNA samples match 
+											purely by chance is about 1 in 1 quadrillion (assuming all STRs are independent of each other). So if two DNA samples match in the number of 
+											repeats for each of the STRs, the analyst can be pretty confident they came from the same person.
+											<br><br>
+											This written program will take a sequence of DNA and a CSV file containing STR counts for a list of individuals and then output to whom the DNA (most likely) belongs.
+										</p>
+										<p><a href="https://github.com/TheClub4/minesweeper" class="custom-btn">View Portfolio</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 portfolio-wrap filter-ai ftco-animate">
+				<div class="row align-items-center">
+					<div class="col-md-12">
+						<div class="img js-fullheight" style="background-image: url(static/images/work-17.jpg);">
+							
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="text">
+							<div class="px-0 pt-5">
+								<div class="desc">
+									<div class="top top-relative">
+										<span class="subheading">Python {20/04/2020}</span>
+										<h2 class="mb-4"><a>Readability</a></h2>
+									</div>
+									<div class="absolute relative">
+										<p>A program that computes the approximate grade level needed to comprehend some text.
+											<br><br>
+											A human expert might read a book and make a decision on the grade for which they think the book is most appropriate. But you could also 
+											imagine an algorithm attempting to figure out what the reading level of a text is. So what sorts of traits are characteristic of higher reading levels? Well, longer words 
+											probably correlate with higher reading levels. Likewise, longer sentences probably correlate with higher reading levels, too. A number of “readability tests” have been developed over the years, 
+											to give a formulaic process for computing the reading level of a text. <br><br>One such readability test is the Coleman-Liau index. The Coleman-Liau index of a text is designed to output what (U.S.) 
+											grade level is needed to understand the text.
+										</p>
+										<p><a href="https://github.com/TheClub4/minesweeper" class="custom-btn">View Portfolio</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>  
+
+	</div>
+
+</section>
+
+{% endblock %}  

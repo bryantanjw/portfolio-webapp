@@ -1,3 +1,3 @@
 # Portfolio Site
 
-### Currently being hosted on Heroku: bryantan.herokuapp.com
+Currently being hosted on Heroku: **https://bryantan.herokuapp.com/**

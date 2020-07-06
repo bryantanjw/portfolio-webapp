@@ -8867,7 +8867,11 @@ h1, h2, h3, h4, h5,
     .hero-wrap-writing .slider-text p strong a {
       color: #000; }
 
-      
+.parallax h6,
+.blog-wrap h6 {
+  margin-left: 0;
+} 
+
 .parallax h2 {
   font-size: 80px;
   font-weight: 900;
@@ -8910,7 +8914,11 @@ h1, h2, h3, h4, h5,
   }
   @media (max-width: 767.98px) {
     .blog-wrap .text h2 {
-      font-size: 38px; } }
+      font-size: 38px; }
+    .parallax .text {
+      margin-top: 30px;
+    }
+    }
 
 
 .blog-wrap .text .icon .img {

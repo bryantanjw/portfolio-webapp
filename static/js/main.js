@@ -356,7 +356,9 @@
     fixedContentPos: false
   });
 
-  /* ---- particles.js config ---- */
+  	// ========================================================================= //
+  	//  particle.js
+	// ========================================================================= //
 
 		particlesJS("particles-js", {
 		"particles": {
@@ -468,53 +470,14 @@
 		},
 		"retina_detect": true
 		});
+	// ========================================================================= //
+  	//  END particle.js
+  	// ========================================================================= //
+	
 
-		const $circle = document.querySelector('.card__circle');
-		const $smallCircle = document.querySelector('.card__smallCircle');
-		const $year = document.querySelector('.card__year');
-		const $card = document.querySelector('.card');
-		const $cardOrangeShine = document.querySelector('.card__orangeShine');
-		const $cardThankYou = document.querySelector('.card__thankyou');
-		const $cardComet = document.querySelector('.card__cometOuter');
-		
-		const generateTranslate = (el, e, value) => {
-			el.style.transform = `translate(${e.clientX*value}px, ${e.clientY*value}px)`;
-		}
-		// http://stackoverflow.com/a/1480137
-		const cumulativeOffset = (element) => {
-			var top = 0, left = 0;
-			do {
-				top += element.offsetTop  || 0;
-				left += element.offsetLeft || 0;
-				element = element.offsetParent;
-			} while(element);
-		
-			return {
-				top: top,
-				left: left
-			};
-		};
-		document.onmousemove = (event) => {
-			const e = event || window.event;
-			const x = (e.pageX - cumulativeOffset($card).left - (350 / 2)) * -1 / 100;
-			const y = (e.pageY - cumulativeOffset($card).top - (350 / 2)) * -1 / 100;
-		
-			const matrix = [
-				[1, 0, 0, -x * 0.00005],
-				[0, 1, 0, -y * 0.00005],
-				[0, 0, 1, 1],
-				[0, 0, 0, 1]
-			];
-		
-			generateTranslate($smallCircle, e, 0.03);
-			generateTranslate($cardThankYou, e, 0.03);
-			generateTranslate($cardOrangeShine, e, 0.09);
-			generateTranslate($circle, e, 0.05);
-			generateTranslate($year, e, 0.03);
-			generateTranslate($cardComet, e, 0.05);
-		
-			$card.style.transform = `matrix3d(${matrix.toString()})`;
-		}
+		$('[id^=accordion]').on('show.bs.collapse', function (e) {
+			$('[id^=accordion] .panel-collapse.collapse').not(e.target).collapse('show');
+		});
   
 	// Get the modal
 	var modal = document.getElementById("myModal");
@@ -542,7 +505,6 @@
   // ========================================================================= //
   //  Porfolio isotope and filter
   // ========================================================================= //
-  // Porfolio isotope and filter
   $(window).load(function() {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item'
@@ -558,6 +520,9 @@
     });
   });
 
+  $('.panel-heading a').on('click', function() {
+	  $('#collapseOne, #collapseTwo, #collapseThree').collapse('hide')
+  })
   
 
 })(jQuery);

@@ -22,7 +22,7 @@
 			// Set visited flag in local storage
 			localStorage.setItem('visited', true);
 			// Alert the user
-			$('#myModal').modal('show');  
+			$('#popupModal').modal('show');  
 	   }
 	});
 

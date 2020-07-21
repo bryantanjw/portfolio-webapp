@@ -15,6 +15,18 @@
 		}, 1);
 	};
 	loader();
+
+	$(document).ready(function() {
+		// Check if localStorage is available (IE8+) and make sure that the visited flag is not already set.
+		if(typeof window.localStorage !== "undefined" && !localStorage.getItem('visited') && (window.innerWidth < 950)) {
+			// Set visited flag in local storage
+			localStorage.setItem('visited', true);
+			// Alert the user
+			$('#myModal').modal('show');  
+	   }
+	});
+
+	
 	// ========================================================================= //
   	//  Typed Js
 	// ========================================================================= //

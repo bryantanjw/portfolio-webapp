@@ -38,8 +38,33 @@
                 </div>
             </nav>
             <!-- END nav -->
+            
+            <!-- Modal -->
+            <div class="modal fade hidden-md" id="myModal" tabindex="-1" role="dialog" aria-labelledby="memberModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title pl-1" id="memberModalLabel">Greetings!</h4>
+                        </div>
+                        <div class="modal-body p-4">
+                          <p>It seems like you are currently using
+                            a mobile device.
+                            <br>
+                            <br>
+                             For a better experience—more appealing aesthetics and
+                             interactivity—it is recommended to browse the site on a desktop or a laptop.
+                          </p>
+                  
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Continue Anyway</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
             {% block content %}
+
 
             {% endblock %}
 

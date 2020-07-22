@@ -25,7 +25,48 @@
 			$('#popupModal').modal('show');  
 	   }
 	});
+	var filterLoad = function() {
+		// Filter All
+		$('#filter-all-btn').on('click', function() {
+			$("#portfolio-flters li").removeClass('filter-active');
+			$(this).addClass('filter-active');
+			$(".filter-web, .filter-ai, .filter-data, .filter-mobile").css("display", "block");
+		});
 
+		// Filter AI
+		$('#filter-ai-btn').on('click', function() {
+			$("#portfolio-flters li").removeClass('filter-active');
+			$(this).addClass('filter-active');
+			$(".portfolio-container .filter-ai").css("display", "block");
+			$(".filter-web, .filter-data, .filter-mobile").css("display", "none");
+		});
+		
+
+		// Filter Data
+		$('#filter-data-btn').on('click', function() {
+			$("#portfolio-flters li").removeClass('filter-active');
+			$(this).addClass('filter-active');
+			$(".portfolio-container .filter-data").css("display", "block");
+			$(".filter-web, .filter-ai, .filter-mobile").css("display", "none");
+		});
+
+		// Filter Web
+		$('#filter-web-btn').on('click', function() {
+			$("#portfolio-flters li").removeClass('filter-active');
+			$(this).addClass('filter-active');
+			$(".portfolio-container .filter-web").css("display", "block");
+			$(".filter-ai, .filter-data, .filter-mobile").css("display", "none");
+		});
+
+		// Filter Mobile
+		$('#filter-mobile-btn').on('click', function() {
+			$("#portfolio-flters li").removeClass('filter-active');
+			$(this).addClass('filter-active');
+			$(".portfolio-container .filter-mobile").css("display", "block");
+			$(".filter-web, .filter-data, .filter-ai").css("display", "none");
+		});
+	};
+	filterLoad();
 	
 	// ========================================================================= //
   	//  Typed Js
@@ -355,6 +396,7 @@
 
     fixedContentPos: false
   });
+  
 
   	// ========================================================================= //
   	//  particle.js
@@ -499,26 +541,6 @@
 	span.onclick = function() {
 	modal.style.display = "none";
 	}
-
-	
-
-  // ========================================================================= //
-  //  Porfolio isotope and filter
-  // ========================================================================= //
-  $(window).load(function() {
-    var portfolioIsotope = $('.portfolio-container').isotope({
-      itemSelector: '.portfolio-item'
-    });
-
-    $('#portfolio-flters li').on('click', function() {
-      $("#portfolio-flters li").removeClass('filter-active');
-      $(this).addClass('filter-active');
-
-      portfolioIsotope.isotope({
-        filter: $(this).data('filter')
-      });
-    });
-  });
 
   $('.panel-heading a').on('click', function() {
 	  $('#collapseOne, #collapseTwo, #collapseThree').collapse('hide')

@@ -9575,7 +9575,12 @@ textarea.form-control {
 --------------------------------------------------------------*/
 .portfolio #portfolio-flters {
   list-style: none;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 900px){
+  .portfolio #portfolio-flters {
+    margin-left: -70px !important;
+  }
 }
 
 .portfolio #portfolio-flters li {

@@ -9371,6 +9371,11 @@ textarea.form-control {
 }
 @media screen and (max-width: 900px){
   .portfolio #portfolio-flters {
+    margin-left: -50px;
+  }
+  .portfolio #portfolio-flters li {
+    padding: 2px 6px !important;
+    margin: 0 8px 8px 8px !important;
   }
 }
 

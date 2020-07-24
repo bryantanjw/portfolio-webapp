@@ -10,14 +10,15 @@
 
             gtag('config', 'UA-172137283-1');
         </script>
-        <meta property="og:title" content="Bryan Tan">
-        <meta property="og:image" content="{{ url_for('static', filename='images/preview.gif') }}">
-        <meta property="og:description" content="An ordinary website.">
-        <meta name="twitter:card" content="summary_large_image">
         
         <title>{% block title %}{% endblock %}</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta property="og:title" content="Bryan Tan">
+        <meta property="og:url" content="http://www.bryantanjw.com/index.html"/>
+        <meta property="og:image" content="{{ url_for('static', filename='images/preview.gif') }}">
+        <meta property="og:description" content="An ordinary website.">
+        <meta name="twitter:card" content="summary_large_image">
         <link rel="Icon" type="Icon" href="{{ url_for('static', filename='fonts/flaticon/beta.png') }}">
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:900&display=swap" rel="stylesheet" type="text/css">

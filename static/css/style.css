@@ -8576,7 +8576,7 @@ h1, h2, h3, h4, h5,
 
 @-webkit-keyframes myanimation {
   0% {
-    background-color: #69779b; }
+    background-color: #85a5f5; }
   25% {
     background-color: #f8b500; }
   50% {
@@ -8649,7 +8649,8 @@ h1, h2, h3, h4, h5,
   -o-text-fill-color: transparent;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  animation: myanimation 3s infinite; }
   @media (max-width: 1199.98px) {
     .hero-wrap-writing .slider-text h1 {
       font-size: 200px; } }

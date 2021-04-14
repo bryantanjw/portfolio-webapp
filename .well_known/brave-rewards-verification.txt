@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: bryantanjw.com
+Token: 5eacff082c81de79c6184af3245371bed7b27bc681352fea135c175c4a069722
